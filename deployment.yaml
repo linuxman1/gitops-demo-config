@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: gitops-demo-app
-        image: linuxmanl/gitops-demo-app:v23
+        image: linuxmanl/gitops-demo-app:v24
         ports:
         - containerPort: 3000
         env:
