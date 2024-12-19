@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: gitops-demo-app
-        image: ${DOCKER_REGISTRY}/${APP_NAME}:latest
+        image: linuxmanl/gitops-demo-app:v19
         ports:
         - containerPort: 3000
         env:
