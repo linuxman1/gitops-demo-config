@@ -18,14 +18,14 @@ spec:
         image: linuxmanl/gitops-demo-app:latest
         imagePullPolicy: Always  # Important for latest tag
         ports:
-        - containerPort: 3000
+        - containerPort: 80
         resources:
           requests:
-            cpu: "100m"
             memory: "128Mi"
+            cpu: "100m"
           limits:
+            memory: "256Mi"
             cpu: "200m"
-            memory: "256Mi
         securityContext:
           runAsNonRoot: true
           runAsUser: 1000
